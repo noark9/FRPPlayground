@@ -16,6 +16,8 @@
 @property (nonatomic, weak) IBOutlet UITextField *passwordTextField;
 @property (nonatomic, weak) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UIButton *resetButton;
+@property (weak, nonatomic) IBOutlet UIVisualEffectView *loadingContainerView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingActivityIndicatorView;
 
 @property (nonatomic, strong) LoginViewModel *viewModel;
 
@@ -48,6 +50,24 @@
     
     RAC(_loginButton, rac_command) = RACObserve(_viewModel, loginCommand);
     RAC(_resetButton, rac_command) = RACObserve(_viewModel, resetCommand);
+    RACSignal *loginSignal = RACObserve(_viewModel, status);
+    [loginSignal subscribeNext:^(id x) {
+        LoginStatus status = [x unsignedIntegerValue];
+        switch (status) {
+            case LoginStatusNone:
+            case LoginStatusFinished:
+            case LoginStatusFailed:
+                self.loadingContainerView.hidden = YES;
+                [self.loadingActivityIndicatorView stopAnimating];
+                break;
+            case LoginStatusLoading:
+                self.loadingContainerView.hidden = NO;
+                [self.loadingActivityIndicatorView startAnimating];
+                break;
+            default:
+                break;
+        }
+    }];
 }
 
 @end

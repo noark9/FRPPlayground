@@ -26,16 +26,18 @@
     return self;
 }
 
+- (void)setStatus:(LoginStatus)status
+{
+    _status = status;
+}
+
 - (void)setup
 {
     RACSignal *usernameSignal = RACObserve(self, username);
     RACSignal *passwordSignal = RACObserve(self, password);
-    RACSignal *isLoadingSignal = RACObserve(self, isLoading);
+    self.status = LoginStatusNone;
     
-    _loginButtonEnabledSignal = [RACSignal combineLatest:@[usernameSignal, passwordSignal, isLoadingSignal] reduce:^id(NSString *username, NSString *password, NSNumber *isLoading){
-        if (isLoading) {
-            return @NO;
-        }
+    _loginButtonEnabledSignal = [RACSignal combineLatest:@[usernameSignal, passwordSignal] reduce:^id(NSString *username, NSString *password){
         if (username.length > 0 && password.length > 0) {
             return @YES;
         } else {
@@ -44,7 +46,11 @@
     }];
     
     _loginCommand = [[RACCommand alloc] initWithEnabled:_loginButtonEnabledSignal signalBlock:^RACSignal *(id input) {
+        self.status = LoginStatusLoading;
         NSLog(@"login action with %@/%@", _username, _password);
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            self.status = LoginStatusFinished;
+        });
         return [RACSignal empty];
     }];
     

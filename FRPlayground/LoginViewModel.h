@@ -8,6 +8,13 @@
 
 #import "RVMViewModel.h"
 
+typedef NS_OPTIONS(NSUInteger, LoginStatus) {
+    LoginStatusNone = 0,
+    LoginStatusLoading = 1,
+    LoginStatusFinished = 2,
+    LoginStatusFailed = 3,
+};
+
 @class RACSignal;
 @class RACCommand;
 
@@ -15,8 +22,7 @@
 
 @property (nonatomic, strong) NSString *username;
 @property (nonatomic, strong) NSString *password;
-
-@property (nonatomic, strong, readonly) RACSignal *loginFinishedSignal;
+@property (nonatomic, readonly) LoginStatus status;
 
 @property (nonatomic, strong, readonly) RACSignal *loginButtonEnabledSignal;
 @property (nonatomic, strong, readonly) RACCommand *loginCommand;

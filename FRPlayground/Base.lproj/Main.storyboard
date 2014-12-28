@@ -76,6 +76,7 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QzR-bd-O8y">
                                 <rect key="frame" x="16" y="28" width="568" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="iSP-Da-ryu"/>
                                 </constraints>
@@ -84,6 +85,7 @@
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4mN-6e-agX">
                                 <rect key="frame" x="16" y="66" width="568" height="30"/>
+                                <color key="backgroundColor" red="0.99215692280000001" green="0.62352943419999995" blue="0.180392161" alpha="0.46000000000000002" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="hqe-8N-Hfb"/>
                                 </constraints>
@@ -91,9 +93,10 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ie-I2-ngF">
-                                <rect key="frame" x="281" y="104" width="38" height="30"/>
+                                <rect key="frame" x="240" y="104" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.49842780889999999" green="0.25408974099999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="38" id="ONI-D4-Gti"/>
+                                    <constraint firstAttribute="width" constant="120" id="ONI-D4-Gti"/>
                                     <constraint firstAttribute="height" constant="30" id="YUn-Rw-pfs"/>
                                 </constraints>
                                 <state key="normal" title="Login">
@@ -101,31 +104,55 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvn-Vl-Jut">
-                                <rect key="frame" x="280" y="142" width="40" height="30"/>
+                                <rect key="frame" x="240" y="142" width="120" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="haD-Ux-ELT"/>
+                                    <constraint firstAttribute="width" constant="120" id="haD-Ux-ELT"/>
                                     <constraint firstAttribute="height" constant="30" id="xh8-RP-VGK"/>
                                 </constraints>
                                 <state key="normal" title="Reset">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0QU-1m-e3R">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mEN-iH-YCi">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Hy3-e3-uLx">
+                                            <rect key="frame" x="290" y="290" width="20" height="20"/>
+                                        </activityIndicatorView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="Hy3-e3-uLx" secondAttribute="centerY" id="WH5-2c-hiV"/>
+                                        <constraint firstAttribute="centerX" secondItem="Hy3-e3-uLx" secondAttribute="centerX" id="cwZ-lq-2pD"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="0QU-1m-e3R" firstAttribute="top" secondItem="6Af-lO-Nf7" secondAttribute="top" id="Afy-BO-7aj"/>
                             <constraint firstItem="QzR-bd-O8y" firstAttribute="leading" secondItem="6Af-lO-Nf7" secondAttribute="leadingMargin" id="Eh9-yX-1T9"/>
                             <constraint firstAttribute="centerX" secondItem="0ie-I2-ngF" secondAttribute="centerX" id="FH1-Zj-jVq"/>
+                            <constraint firstAttribute="trailing" secondItem="0QU-1m-e3R" secondAttribute="trailing" id="K7e-i0-Cl0"/>
                             <constraint firstAttribute="centerX" secondItem="rvn-Vl-Jut" secondAttribute="centerX" id="Syc-h0-5nu"/>
                             <constraint firstItem="QzR-bd-O8y" firstAttribute="top" secondItem="FKR-IH-D1L" secondAttribute="bottom" constant="8" id="WOi-aC-UwV"/>
                             <constraint firstItem="4mN-6e-agX" firstAttribute="leading" secondItem="6Af-lO-Nf7" secondAttribute="leadingMargin" id="ef4-sJ-DJC"/>
+                            <constraint firstItem="rR2-Z5-E9n" firstAttribute="top" secondItem="0QU-1m-e3R" secondAttribute="bottom" id="lOL-Lf-iKR"/>
                             <constraint firstItem="0ie-I2-ngF" firstAttribute="top" secondItem="4mN-6e-agX" secondAttribute="bottom" constant="8" id="mma-8g-gIj"/>
                             <constraint firstItem="QzR-bd-O8y" firstAttribute="trailing" secondItem="6Af-lO-Nf7" secondAttribute="trailingMargin" id="oJ4-Ke-Ahx"/>
                             <constraint firstItem="rvn-Vl-Jut" firstAttribute="top" secondItem="0ie-I2-ngF" secondAttribute="bottom" constant="8" id="ouf-L1-f49"/>
                             <constraint firstItem="4mN-6e-agX" firstAttribute="top" secondItem="QzR-bd-O8y" secondAttribute="bottom" constant="8" id="pPj-6u-aE3"/>
+                            <constraint firstItem="0QU-1m-e3R" firstAttribute="leading" secondItem="6Af-lO-Nf7" secondAttribute="leading" id="xal-zI-azJ"/>
                             <constraint firstItem="4mN-6e-agX" firstAttribute="trailing" secondItem="6Af-lO-Nf7" secondAttribute="trailingMargin" id="zKO-a5-Tjh"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loadingActivityIndicatorView" destination="Hy3-e3-uLx" id="aKh-9A-YJD"/>
+                        <outlet property="loadingContainerView" destination="0QU-1m-e3R" id="zqu-gR-Seo"/>
                         <outlet property="loginButton" destination="0ie-I2-ngF" id="CBA-iY-nkG"/>
                         <outlet property="passwordTextField" destination="4mN-6e-agX" id="Zfx-Rj-D5V"/>
                         <outlet property="resetButton" destination="rvn-Vl-Jut" id="rHe-Xr-jjL"/>
