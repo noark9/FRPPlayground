@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18A8FC1819F89AC300FCDBCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A8FC1719F89AC300FCDBCC /* main.m */; };
+		18A8FC1B19F89AC300FCDBCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A8FC1A19F89AC300FCDBCC /* AppDelegate.m */; };
+		18A8FC1E19F89AC300FCDBCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A8FC1D19F89AC300FCDBCC /* ViewController.m */; };
+		18A8FC2119F89AC300FCDBCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A8FC1F19F89AC300FCDBCC /* Main.storyboard */; };
+		18A8FC2319F89AC300FCDBCC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A8FC2219F89AC300FCDBCC /* Images.xcassets */; };
+		18A8FC2619F89AC300FCDBCC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A8FC2419F89AC300FCDBCC /* LaunchScreen.xib */; };
+		18A8FC3219F89AC300FCDBCC /* FRPlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A8FC3119F89AC300FCDBCC /* FRPlaygroundTests.m */; };
+		18D2C30C1A4EFC6C0001D248 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D2C30B1A4EFC6C0001D248 /* LoginViewController.m */; };
+		18D2C30F1A4EFCC60001D248 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D2C30E1A4EFCC60001D248 /* LoginViewModel.m */; };
+		18D2C3121A4EFD220001D248 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D2C3111A4EFD220001D248 /* UserModel.m */; };
+		18DF6E5C1A4BA00B008CEB93 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DF6E5B1A4BA00B008CEB93 /* ViewModel.m */; };
+		DDF5E9D27EE3CB81BB86C0C7 /* libPods-FRPlayground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6654C1E368E4409E824B74D /* libPods-FRPlayground.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18A8FC2C19F89AC300FCDBCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18A8FC0A19F89AC300FCDBCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A8FC1119F89AC300FCDBCC;
+			remoteInfo = FRPlayground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18A8FC1219F89AC300FCDBCC /* FRPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A8FC1619F89AC300FCDBCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A8FC1719F89AC300FCDBCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18A8FC1919F89AC300FCDBCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18A8FC1A19F89AC300FCDBCC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18A8FC1C19F89AC300FCDBCC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18A8FC1D19F89AC300FCDBCC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18A8FC2019F89AC300FCDBCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18A8FC2219F89AC300FCDBCC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18A8FC2519F89AC300FCDBCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		18A8FC2B19F89AC300FCDBCC /* FRPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A8FC3019F89AC300FCDBCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A8FC3119F89AC300FCDBCC /* FRPlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPlaygroundTests.m; sourceTree = "<group>"; };
+		18D2C30A1A4EFC6C0001D248 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		18D2C30B1A4EFC6C0001D248 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		18D2C30D1A4EFCC60001D248 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		18D2C30E1A4EFCC60001D248 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		18D2C3101A4EFD220001D248 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		18D2C3111A4EFD220001D248 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		18DF6E5A1A4BA00B008CEB93 /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		18DF6E5B1A4BA00B008CEB93 /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		9B81886BB774847A1BD5C784 /* Pods-FRPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FRPlayground/Pods-FRPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		C5E5F896CFC219AC8EC22066 /* Pods-FRPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-FRPlayground/Pods-FRPlayground.release.xcconfig"; sourceTree = "<group>"; };
+		D6654C1E368E4409E824B74D /* libPods-FRPlayground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FRPlayground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18A8FC0F19F89AC300FCDBCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF5E9D27EE3CB81BB86C0C7 /* libPods-FRPlayground.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A8FC2819F89AC300FCDBCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18A8FC0919F89AC300FCDBCC = {
+			isa = PBXGroup;
+			children = (
+				18A8FC1419F89AC300FCDBCC /* FRPlayground */,
+				18A8FC2E19F89AC300FCDBCC /* FRPlaygroundTests */,
+				18A8FC1319F89AC300FCDBCC /* Products */,
+				F3975B8A81537B1D93F61101 /* Pods */,
+				5B061520E5DC2A65B117B532 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18A8FC1319F89AC300FCDBCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18A8FC1219F89AC300FCDBCC /* FRPlayground.app */,
+				18A8FC2B19F89AC300FCDBCC /* FRPlaygroundTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18A8FC1419F89AC300FCDBCC /* FRPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				18A8FC1919F89AC300FCDBCC /* AppDelegate.h */,
+				18A8FC1A19F89AC300FCDBCC /* AppDelegate.m */,
+				18A8FC1C19F89AC300FCDBCC /* ViewController.h */,
+				18A8FC1D19F89AC300FCDBCC /* ViewController.m */,
+				18A8FC1F19F89AC300FCDBCC /* Main.storyboard */,
+				18A8FC2219F89AC300FCDBCC /* Images.xcassets */,
+				18A8FC2419F89AC300FCDBCC /* LaunchScreen.xib */,
+				18A8FC1519F89AC300FCDBCC /* Supporting Files */,
+				18DF6E5A1A4BA00B008CEB93 /* ViewModel.h */,
+				18DF6E5B1A4BA00B008CEB93 /* ViewModel.m */,
+				18D2C30A1A4EFC6C0001D248 /* LoginViewController.h */,
+				18D2C30B1A4EFC6C0001D248 /* LoginViewController.m */,
+				18D2C30D1A4EFCC60001D248 /* LoginViewModel.h */,
+				18D2C30E1A4EFCC60001D248 /* LoginViewModel.m */,
+				18D2C3101A4EFD220001D248 /* UserModel.h */,
+				18D2C3111A4EFD220001D248 /* UserModel.m */,
+			);
+			path = FRPlayground;
+			sourceTree = "<group>";
+		};
+		18A8FC1519F89AC300FCDBCC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18A8FC1619F89AC300FCDBCC /* Info.plist */,
+				18A8FC1719F89AC300FCDBCC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18A8FC2E19F89AC300FCDBCC /* FRPlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				18A8FC3119F89AC300FCDBCC /* FRPlaygroundTests.m */,
+				18A8FC2F19F89AC300FCDBCC /* Supporting Files */,
+			);
+			path = FRPlaygroundTests;
+			sourceTree = "<group>";
+		};
+		18A8FC2F19F89AC300FCDBCC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18A8FC3019F89AC300FCDBCC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B061520E5DC2A65B117B532 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6654C1E368E4409E824B74D /* libPods-FRPlayground.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3975B8A81537B1D93F61101 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B81886BB774847A1BD5C784 /* Pods-FRPlayground.debug.xcconfig */,
+				C5E5F896CFC219AC8EC22066 /* Pods-FRPlayground.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18A8FC1119F89AC300FCDBCC /* FRPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A8FC3519F89AC300FCDBCC /* Build configuration list for PBXNativeTarget "FRPlayground" */;
+			buildPhases = (
+				3568DD7552EB2F3518CACB88 /* Check Pods Manifest.lock */,
+				18A8FC0E19F89AC300FCDBCC /* Sources */,
+				18A8FC0F19F89AC300FCDBCC /* Frameworks */,
+				18A8FC1019F89AC300FCDBCC /* Resources */,
+				4FFF74674D4D1D8E8AC027A1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FRPlayground;
+			productName = FRPlayground;
+			productReference = 18A8FC1219F89AC300FCDBCC /* FRPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18A8FC2A19F89AC300FCDBCC /* FRPlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A8FC3819F89AC300FCDBCC /* Build configuration list for PBXNativeTarget "FRPlaygroundTests" */;
+			buildPhases = (
+				18A8FC2719F89AC300FCDBCC /* Sources */,
+				18A8FC2819F89AC300FCDBCC /* Frameworks */,
+				18A8FC2919F89AC300FCDBCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18A8FC2D19F89AC300FCDBCC /* PBXTargetDependency */,
+			);
+			name = FRPlaygroundTests;
+			productName = FRPlaygroundTests;
+			productReference = 18A8FC2B19F89AC300FCDBCC /* FRPlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18A8FC0A19F89AC300FCDBCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					18A8FC1119F89AC300FCDBCC = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					18A8FC2A19F89AC300FCDBCC = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 18A8FC1119F89AC300FCDBCC;
+					};
+				};
+			};
+			buildConfigurationList = 18A8FC0D19F89AC300FCDBCC /* Build configuration list for PBXProject "FRPlayground" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18A8FC0919F89AC300FCDBCC;
+			productRefGroup = 18A8FC1319F89AC300FCDBCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18A8FC1119F89AC300FCDBCC /* FRPlayground */,
+				18A8FC2A19F89AC300FCDBCC /* FRPlaygroundTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18A8FC1019F89AC300FCDBCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A8FC2119F89AC300FCDBCC /* Main.storyboard in Resources */,
+				18A8FC2619F89AC300FCDBCC /* LaunchScreen.xib in Resources */,
+				18A8FC2319F89AC300FCDBCC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A8FC2919F89AC300FCDBCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3568DD7552EB2F3518CACB88 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4FFF74674D4D1D8E8AC027A1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRPlayground/Pods-FRPlayground-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18A8FC0E19F89AC300FCDBCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A8FC1E19F89AC300FCDBCC /* ViewController.m in Sources */,
+				18A8FC1B19F89AC300FCDBCC /* AppDelegate.m in Sources */,
+				18D2C3121A4EFD220001D248 /* UserModel.m in Sources */,
+				18D2C30F1A4EFCC60001D248 /* LoginViewModel.m in Sources */,
+				18DF6E5C1A4BA00B008CEB93 /* ViewModel.m in Sources */,
+				18A8FC1819F89AC300FCDBCC /* main.m in Sources */,
+				18D2C30C1A4EFC6C0001D248 /* LoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A8FC2719F89AC300FCDBCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A8FC3219F89AC300FCDBCC /* FRPlaygroundTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18A8FC2D19F89AC300FCDBCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18A8FC1119F89AC300FCDBCC /* FRPlayground */;
+			targetProxy = 18A8FC2C19F89AC300FCDBCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18A8FC1F19F89AC300FCDBCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A8FC2019F89AC300FCDBCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18A8FC2419F89AC300FCDBCC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A8FC2519F89AC300FCDBCC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18A8FC3319F89AC300FCDBCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		18A8FC3419F89AC300FCDBCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		18A8FC3619F89AC300FCDBCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B81886BB774847A1BD5C784 /* Pods-FRPlayground.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FRPlayground/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		18A8FC3719F89AC300FCDBCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5E5F896CFC219AC8EC22066 /* Pods-FRPlayground.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FRPlayground/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		18A8FC3919F89AC300FCDBCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FRPlaygroundTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FRPlayground.app/FRPlayground";
+			};
+			name = Debug;
+		};
+		18A8FC3A19F89AC300FCDBCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FRPlaygroundTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FRPlayground.app/FRPlayground";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18A8FC0D19F89AC300FCDBCC /* Build configuration list for PBXProject "FRPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A8FC3319F89AC300FCDBCC /* Debug */,
+				18A8FC3419F89AC300FCDBCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A8FC3519F89AC300FCDBCC /* Build configuration list for PBXNativeTarget "FRPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A8FC3619F89AC300FCDBCC /* Debug */,
+				18A8FC3719F89AC300FCDBCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A8FC3819F89AC300FCDBCC /* Build configuration list for PBXNativeTarget "FRPlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A8FC3919F89AC300FCDBCC /* Debug */,
+				18A8FC3A19F89AC300FCDBCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18A8FC0A19F89AC300FCDBCC /* Project object */;
+}

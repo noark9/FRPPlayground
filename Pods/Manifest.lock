@@ -1,0 +1,23 @@
+PODS:
+  - ReactiveCocoa (2.4.2):
+    - ReactiveCocoa/UI
+  - ReactiveCocoa/Core (2.4.2):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.4.2)
+  - ReactiveCocoa/UI (2.4.2):
+    - ReactiveCocoa/Core
+  - ReactiveViewModel (0.3):
+    - ReactiveCocoa (~> 2.4)
+  - RXCollections (1.0)
+
+DEPENDENCIES:
+  - ReactiveCocoa
+  - ReactiveViewModel
+  - RXCollections (~> 1.0)
+
+SPEC CHECKSUMS:
+  ReactiveCocoa: 8418a82b67af2f1b7587baf29c329040a23c2063
+  ReactiveViewModel: 512224f801ea0a603fd394eed0f38bc662b64b9a
+  RXCollections: 96cbe2ebea1a3b5ab8ca7a50f4296fb7fa05adc1
+
+COCOAPODS: 0.34.4
