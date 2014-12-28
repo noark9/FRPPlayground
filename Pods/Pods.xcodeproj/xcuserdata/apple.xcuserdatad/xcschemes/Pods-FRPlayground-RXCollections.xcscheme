@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "755C4C58AB1FF5729734CFE0"
+               BlueprintIdentifier = "9E1F963228578AE659DE87E9"
                BuildableName = "libPods-FRPlayground-RXCollections.a"
                BlueprintName = "Pods-FRPlayground-RXCollections"
                ReferencedContainer = "container:Pods.xcodeproj">
