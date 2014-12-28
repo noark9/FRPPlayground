@@ -9,6 +9,12 @@
 #import "LoginViewModel.h"
 #import <ReactiveCocoa.h>
 
+@interface LoginViewModel ()
+
+@property (nonatomic) BOOL isLoading;
+
+@end
+
 @implementation LoginViewModel
 
 - (instancetype)init
@@ -24,8 +30,12 @@
 {
     RACSignal *usernameSignal = RACObserve(self, username);
     RACSignal *passwordSignal = RACObserve(self, password);
+    RACSignal *isLoadingSignal = RACObserve(self, isLoading);
     
-    _loginButtonEnabledSignal = [RACSignal combineLatest:@[usernameSignal, passwordSignal] reduce:^id(NSString *username, NSString *password){
+    _loginButtonEnabledSignal = [RACSignal combineLatest:@[usernameSignal, passwordSignal, isLoadingSignal] reduce:^id(NSString *username, NSString *password, NSNumber *isLoading){
+        if (isLoading) {
+            return @NO;
+        }
         if (username.length > 0 && password.length > 0) {
             return @YES;
         } else {
