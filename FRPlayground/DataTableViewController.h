@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class DataTableViewModel;
+
 @interface DataTableViewController : UITableViewController
+
+@property (nonatomic, strong) DataTableViewModel *viewModel;
 
 @end

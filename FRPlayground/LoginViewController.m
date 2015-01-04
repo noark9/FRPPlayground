@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "LoginViewModel.h"
+#import "DataTableViewController.h"
 #import <ReactiveCocoa.h>
 
 @interface LoginViewController ()
@@ -71,6 +72,7 @@
             case LoginStatusFinished:
                 self.loadingContainerView.hidden = YES;
                 [self.loadingActivityIndicatorView stopAnimating];
+                [self performSegueWithIdentifier:@"Go2Next" sender:nil];
                 break;
             case LoginStatusLoading:
                 self.loadingContainerView.hidden = NO;
@@ -80,6 +82,16 @@
                 break;
         }
     }];
+}
+
+#pragma mark - segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"Go2Next"]) {
+        DataTableViewController *dest = segue.destinationViewController;
+        dest.viewModel = self.viewModel.dataTableViewModel;
+    }
 }
 
 @end

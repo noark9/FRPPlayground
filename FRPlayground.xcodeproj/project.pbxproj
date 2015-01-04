@@ -23,6 +23,7 @@
 		18D7DDEF1A50CFFB0091B5EB /* DataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D7DDEE1A50CFFB0091B5EB /* DataTableViewController.m */; };
 		18D7DDF21A50D0190091B5EB /* DataTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D7DDF11A50D0190091B5EB /* DataTableViewModel.m */; };
 		18DF6E5C1A4BA00B008CEB93 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DF6E5B1A4BA00B008CEB93 /* ViewModel.m */; };
+		18E562411A5995D9003936B6 /* FakeDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E562401A5995D9003936B6 /* FakeDataLoader.m */; };
 		DDF5E9D27EE3CB81BB86C0C7 /* libPods-FRPlayground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6654C1E368E4409E824B74D /* libPods-FRPlayground.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,8 @@
 		18D7DDF11A50D0190091B5EB /* DataTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataTableViewModel.m; sourceTree = "<group>"; };
 		18DF6E5A1A4BA00B008CEB93 /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
 		18DF6E5B1A4BA00B008CEB93 /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		18E5623F1A5995D9003936B6 /* FakeDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeDataLoader.h; sourceTree = "<group>"; };
+		18E562401A5995D9003936B6 /* FakeDataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeDataLoader.m; sourceTree = "<group>"; };
 		9B81886BB774847A1BD5C784 /* Pods-FRPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FRPlayground/Pods-FRPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 		C5E5F896CFC219AC8EC22066 /* Pods-FRPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-FRPlayground/Pods-FRPlayground.release.xcconfig"; sourceTree = "<group>"; };
 		D6654C1E368E4409E824B74D /* libPods-FRPlayground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FRPlayground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,31 +117,17 @@
 		18A8FC1419F89AC300FCDBCC /* FRPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				18E562441A5995FD003936B6 /* table view controller */,
+				18E562431A5995F7003936B6 /* lab */,
+				18E562421A5995E0003936B6 /* normal view controller */,
 				18A8FC1919F89AC300FCDBCC /* AppDelegate.h */,
 				18A8FC1A19F89AC300FCDBCC /* AppDelegate.m */,
-				18A8FC1C19F89AC300FCDBCC /* ViewController.h */,
-				18A8FC1D19F89AC300FCDBCC /* ViewController.m */,
 				18A8FC1F19F89AC300FCDBCC /* Main.storyboard */,
 				18A8FC2219F89AC300FCDBCC /* Images.xcassets */,
 				18A8FC2419F89AC300FCDBCC /* LaunchScreen.xib */,
 				18A8FC1519F89AC300FCDBCC /* Supporting Files */,
-				18DF6E5A1A4BA00B008CEB93 /* ViewModel.h */,
-				18DF6E5B1A4BA00B008CEB93 /* ViewModel.m */,
-				18D2C30A1A4EFC6C0001D248 /* LoginViewController.h */,
-				18D2C30B1A4EFC6C0001D248 /* LoginViewController.m */,
-				18D2C30D1A4EFCC60001D248 /* LoginViewModel.h */,
-				18D2C30E1A4EFCC60001D248 /* LoginViewModel.m */,
 				18D2C3101A4EFD220001D248 /* UserModel.h */,
 				18D2C3111A4EFD220001D248 /* UserModel.m */,
-				18D7DDED1A50CFFB0091B5EB /* DataTableViewController.h */,
-				18D7DDEE1A50CFFB0091B5EB /* DataTableViewController.m */,
-				18D7DDF01A50D0190091B5EB /* DataTableViewModel.h */,
-				18D7DDF11A50D0190091B5EB /* DataTableViewModel.m */,
-				185917661A559D2300EEDDD7 /* DataTableViewCell.h */,
-				185917671A559D2300EEDDD7 /* DataTableViewCell.m */,
-				185917681A559D2300EEDDD7 /* DataTableViewCell.xib */,
-				1859176B1A559EFD00EEDDD7 /* DataItemViewModel.h */,
-				1859176C1A559EFD00EEDDD7 /* DataItemViewModel.m */,
 			);
 			path = FRPlayground;
 			sourceTree = "<group>";
@@ -167,6 +156,46 @@
 				18A8FC3019F89AC300FCDBCC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18E562421A5995E0003936B6 /* normal view controller */ = {
+			isa = PBXGroup;
+			children = (
+				18D2C30A1A4EFC6C0001D248 /* LoginViewController.h */,
+				18D2C30B1A4EFC6C0001D248 /* LoginViewController.m */,
+				18D2C30D1A4EFCC60001D248 /* LoginViewModel.h */,
+				18D2C30E1A4EFCC60001D248 /* LoginViewModel.m */,
+			);
+			name = "normal view controller";
+			sourceTree = "<group>";
+		};
+		18E562431A5995F7003936B6 /* lab */ = {
+			isa = PBXGroup;
+			children = (
+				18A8FC1C19F89AC300FCDBCC /* ViewController.h */,
+				18A8FC1D19F89AC300FCDBCC /* ViewController.m */,
+				18DF6E5A1A4BA00B008CEB93 /* ViewModel.h */,
+				18DF6E5B1A4BA00B008CEB93 /* ViewModel.m */,
+			);
+			name = lab;
+			sourceTree = "<group>";
+		};
+		18E562441A5995FD003936B6 /* table view controller */ = {
+			isa = PBXGroup;
+			children = (
+				18E5623F1A5995D9003936B6 /* FakeDataLoader.h */,
+				18E562401A5995D9003936B6 /* FakeDataLoader.m */,
+				18D7DDED1A50CFFB0091B5EB /* DataTableViewController.h */,
+				18D7DDEE1A50CFFB0091B5EB /* DataTableViewController.m */,
+				18D7DDF01A50D0190091B5EB /* DataTableViewModel.h */,
+				18D7DDF11A50D0190091B5EB /* DataTableViewModel.m */,
+				185917661A559D2300EEDDD7 /* DataTableViewCell.h */,
+				185917671A559D2300EEDDD7 /* DataTableViewCell.m */,
+				185917681A559D2300EEDDD7 /* DataTableViewCell.xib */,
+				1859176B1A559EFD00EEDDD7 /* DataItemViewModel.h */,
+				1859176C1A559EFD00EEDDD7 /* DataItemViewModel.m */,
+			);
+			name = "table view controller";
 			sourceTree = "<group>";
 		};
 		5B061520E5DC2A65B117B532 /* Frameworks */ = {
@@ -328,6 +357,7 @@
 				18D2C30F1A4EFCC60001D248 /* LoginViewModel.m in Sources */,
 				18DF6E5C1A4BA00B008CEB93 /* ViewModel.m in Sources */,
 				18D7DDF21A50D0190091B5EB /* DataTableViewModel.m in Sources */,
+				18E562411A5995D9003936B6 /* FakeDataLoader.m in Sources */,
 				18D7DDEF1A50CFFB0091B5EB /* DataTableViewController.m in Sources */,
 				18A8FC1819F89AC300FCDBCC /* main.m in Sources */,
 				1859176D1A559EFD00EEDDD7 /* DataItemViewModel.m in Sources */,

@@ -200,10 +200,10 @@
             </objects>
             <point key="canvasLocation" x="107" y="1015"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Data Table View Controller-->
         <scene sceneID="gXZ-m6-yaP">
             <objects>
-                <tableViewController id="LDa-A3-K0z" sceneMemberID="viewController">
+                <tableViewController id="LDa-A3-K0z" customClass="DataTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="yYz-jn-rxQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
