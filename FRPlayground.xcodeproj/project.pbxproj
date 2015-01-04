@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185917691A559D2300EEDDD7 /* DataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185917671A559D2300EEDDD7 /* DataTableViewCell.m */; };
+		1859176A1A559D2300EEDDD7 /* DataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185917681A559D2300EEDDD7 /* DataTableViewCell.xib */; };
+		1859176D1A559EFD00EEDDD7 /* DataItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1859176C1A559EFD00EEDDD7 /* DataItemViewModel.m */; };
 		18A8FC1819F89AC300FCDBCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A8FC1719F89AC300FCDBCC /* main.m */; };
 		18A8FC1B19F89AC300FCDBCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A8FC1A19F89AC300FCDBCC /* AppDelegate.m */; };
 		18A8FC1E19F89AC300FCDBCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A8FC1D19F89AC300FCDBCC /* ViewController.m */; };
@@ -17,6 +20,8 @@
 		18D2C30C1A4EFC6C0001D248 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D2C30B1A4EFC6C0001D248 /* LoginViewController.m */; };
 		18D2C30F1A4EFCC60001D248 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D2C30E1A4EFCC60001D248 /* LoginViewModel.m */; };
 		18D2C3121A4EFD220001D248 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D2C3111A4EFD220001D248 /* UserModel.m */; };
+		18D7DDEF1A50CFFB0091B5EB /* DataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D7DDEE1A50CFFB0091B5EB /* DataTableViewController.m */; };
+		18D7DDF21A50D0190091B5EB /* DataTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D7DDF11A50D0190091B5EB /* DataTableViewModel.m */; };
 		18DF6E5C1A4BA00B008CEB93 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DF6E5B1A4BA00B008CEB93 /* ViewModel.m */; };
 		DDF5E9D27EE3CB81BB86C0C7 /* libPods-FRPlayground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6654C1E368E4409E824B74D /* libPods-FRPlayground.a */; };
 /* End PBXBuildFile section */
@@ -32,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185917661A559D2300EEDDD7 /* DataTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTableViewCell.h; sourceTree = "<group>"; };
+		185917671A559D2300EEDDD7 /* DataTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataTableViewCell.m; sourceTree = "<group>"; };
+		185917681A559D2300EEDDD7 /* DataTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataTableViewCell.xib; sourceTree = "<group>"; };
+		1859176B1A559EFD00EEDDD7 /* DataItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataItemViewModel.h; sourceTree = "<group>"; };
+		1859176C1A559EFD00EEDDD7 /* DataItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataItemViewModel.m; sourceTree = "<group>"; };
 		18A8FC1219F89AC300FCDBCC /* FRPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A8FC1619F89AC300FCDBCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18A8FC1719F89AC300FCDBCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -51,6 +61,10 @@
 		18D2C30E1A4EFCC60001D248 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		18D2C3101A4EFD220001D248 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		18D2C3111A4EFD220001D248 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		18D7DDED1A50CFFB0091B5EB /* DataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTableViewController.h; sourceTree = "<group>"; };
+		18D7DDEE1A50CFFB0091B5EB /* DataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataTableViewController.m; sourceTree = "<group>"; };
+		18D7DDF01A50D0190091B5EB /* DataTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTableViewModel.h; sourceTree = "<group>"; };
+		18D7DDF11A50D0190091B5EB /* DataTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataTableViewModel.m; sourceTree = "<group>"; };
 		18DF6E5A1A4BA00B008CEB93 /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
 		18DF6E5B1A4BA00B008CEB93 /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
 		9B81886BB774847A1BD5C784 /* Pods-FRPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FRPlayground/Pods-FRPlayground.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +130,15 @@
 				18D2C30E1A4EFCC60001D248 /* LoginViewModel.m */,
 				18D2C3101A4EFD220001D248 /* UserModel.h */,
 				18D2C3111A4EFD220001D248 /* UserModel.m */,
+				18D7DDED1A50CFFB0091B5EB /* DataTableViewController.h */,
+				18D7DDEE1A50CFFB0091B5EB /* DataTableViewController.m */,
+				18D7DDF01A50D0190091B5EB /* DataTableViewModel.h */,
+				18D7DDF11A50D0190091B5EB /* DataTableViewModel.m */,
+				185917661A559D2300EEDDD7 /* DataTableViewCell.h */,
+				185917671A559D2300EEDDD7 /* DataTableViewCell.m */,
+				185917681A559D2300EEDDD7 /* DataTableViewCell.xib */,
+				1859176B1A559EFD00EEDDD7 /* DataItemViewModel.h */,
+				1859176C1A559EFD00EEDDD7 /* DataItemViewModel.m */,
 			);
 			path = FRPlayground;
 			sourceTree = "<group>";
@@ -247,6 +270,7 @@
 				18A8FC2119F89AC300FCDBCC /* Main.storyboard in Resources */,
 				18A8FC2619F89AC300FCDBCC /* LaunchScreen.xib in Resources */,
 				18A8FC2319F89AC300FCDBCC /* Images.xcassets in Resources */,
+				1859176A1A559D2300EEDDD7 /* DataTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,9 +324,13 @@
 				18A8FC1E19F89AC300FCDBCC /* ViewController.m in Sources */,
 				18A8FC1B19F89AC300FCDBCC /* AppDelegate.m in Sources */,
 				18D2C3121A4EFD220001D248 /* UserModel.m in Sources */,
+				185917691A559D2300EEDDD7 /* DataTableViewCell.m in Sources */,
 				18D2C30F1A4EFCC60001D248 /* LoginViewModel.m in Sources */,
 				18DF6E5C1A4BA00B008CEB93 /* ViewModel.m in Sources */,
+				18D7DDF21A50D0190091B5EB /* DataTableViewModel.m in Sources */,
+				18D7DDEF1A50CFFB0091B5EB /* DataTableViewController.m in Sources */,
 				18A8FC1819F89AC300FCDBCC /* main.m in Sources */,
+				1859176D1A559EFD00EEDDD7 /* DataItemViewModel.m in Sources */,
 				18D2C30C1A4EFC6C0001D248 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

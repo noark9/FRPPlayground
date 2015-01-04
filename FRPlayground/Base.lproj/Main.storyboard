@@ -41,20 +41,56 @@
                                     <constraint firstAttribute="height" constant="31" id="XNO-xB-xKl"/>
                                 </constraints>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrG-bb-5b3">
+                                <rect key="frame" x="16" y="550" width="58" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eDn-48-z0A"/>
+                                </constraints>
+                                <state key="normal" title="button 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPq-f4-1Sr">
+                                <rect key="frame" x="16" y="512" width="58" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ebZ-2X-oVW"/>
+                                </constraints>
+                                <state key="normal" title="button 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yf-Wt-2C9">
+                                <rect key="frame" x="16" y="483" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="MXU-dl-rta"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2Yf-Wt-2C9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0nM-Si-AWN"/>
+                            <constraint firstItem="QPq-f4-1Sr" firstAttribute="top" secondItem="2Yf-Wt-2C9" secondAttribute="bottom" constant="8" id="4W8-dI-m2c"/>
                             <constraint firstAttribute="centerX" secondItem="3Qn-sY-hQt" secondAttribute="centerX" id="7qw-Re-ZUf"/>
                             <constraint firstItem="lQk-3z-mhu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="219" id="Awk-b5-7yB"/>
                             <constraint firstItem="Vlc-hw-o32" firstAttribute="top" secondItem="lQk-3z-mhu" secondAttribute="bottom" constant="8" symbolic="YES" id="CJA-s7-HW8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CrG-bb-5b3" secondAttribute="bottom" constant="20" id="FHz-lL-6kO"/>
                             <constraint firstItem="3Qn-sY-hQt" firstAttribute="top" secondItem="Vlc-hw-o32" secondAttribute="bottom" constant="8" id="Fci-GQ-tlb"/>
+                            <constraint firstItem="CrG-bb-5b3" firstAttribute="top" secondItem="QPq-f4-1Sr" secondAttribute="bottom" constant="8" id="Ija-Gx-Pr2"/>
                             <constraint firstItem="lQk-3z-mhu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="RLj-pq-Kue"/>
+                            <constraint firstItem="QPq-f4-1Sr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WOa-BS-JUc"/>
+                            <constraint firstItem="CrG-bb-5b3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eky-uw-BoH"/>
                             <constraint firstItem="Vlc-hw-o32" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xey-YO-pwg"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="aSwitch" destination="3Qn-sY-hQt" id="TqY-dt-UTW"/>
                         <outlet property="button" destination="Vlc-hw-o32" id="dI0-hW-d56"/>
+                        <outlet property="button1" destination="QPq-f4-1Sr" id="z4b-dU-6xJ"/>
+                        <outlet property="button2" destination="CrG-bb-5b3" id="VRp-EE-EvA"/>
+                        <outlet property="outputLabel" destination="2Yf-Wt-2C9" id="vII-o4-bCi"/>
                         <outlet property="textField" destination="lQk-3z-mhu" id="nc1-PJ-pGZ"/>
                     </connections>
                 </viewController>

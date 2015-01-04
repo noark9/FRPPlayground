@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewModel.h"
+#import "DataTableViewModel.h"
 #import <ReactiveCocoa.h>
 
 @interface LoginViewModel ()
@@ -29,6 +30,12 @@
 - (void)setStatus:(LoginStatus)status
 {
     _status = status;
+}
+
+- (DataTableViewModel *)dataTableViewModel
+{
+    DataTableViewModel *dataTableViewModel = [[DataTableViewModel alloc] init];
+    return dataTableViewModel;
 }
 
 - (void)setup

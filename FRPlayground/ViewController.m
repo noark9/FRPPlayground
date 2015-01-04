@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DataItemViewModel.h"
 #import <RXCollection.h>
 #import <ReactiveCocoa.h>
 
@@ -15,6 +16,14 @@
 @property (nonatomic, weak) IBOutlet UITextField *textField;
 @property (nonatomic, weak) IBOutlet UIButton *button;
 @property (weak, nonatomic) IBOutlet UISwitch *aSwitch;
+@property (weak, nonatomic) IBOutlet UILabel *outputLabel;
+@property (weak, nonatomic) IBOutlet UIButton *button1;
+@property (weak, nonatomic) IBOutlet UIButton *button2;
+
+@property (nonatomic, strong) DataItemViewModel *realItem;
+
+@property (nonatomic, strong) DataItemViewModel *item1;
+@property (nonatomic, strong) DataItemViewModel *item2;
 
 @end
 
@@ -49,6 +58,7 @@
         NSLog(@"happen %@", x);
     }];
     
+    
     RAC(self.textField, textColor) = [signal map:^id(id value) {
         if ([value boolValue]) {
             return [UIColor blueColor];
@@ -57,10 +67,46 @@
         }
     }];
     
+    RAC(_outputLabel, text) = RACObserve(self, realItem.innerItem.title);
+    self.realItem = [[DataItemViewModel alloc] init];
+    self.realItem.title = @"123adsf";
+    self.realItem.innerItem = [[DataItemViewModel alloc] init];
+    self.realItem.innerItem.title = @"adsf";
+    _item1 = [[DataItemViewModel alloc] init];
+    _item1.title = @"adsf";
+    _item1.innerItem = [[DataItemViewModel alloc] init];
+    _item1.innerItem.title = @"9999";
+    _item2 = [[DataItemViewModel alloc] init];
+    _item2.title = @"12";
+    _item2.innerItem = [[DataItemViewModel alloc] init];
+    _item2.innerItem.title = @"3434";
+    
     self.button.rac_command = [[RACCommand alloc] initWithEnabled:signal signalBlock:^RACSignal *(id input) {
         NSLog(@"Push me");
         return [RACSignal empty];
     }];
+    
+    _button1.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+        self.realItem = _item1;
+        return [RACSignal empty];
+    }];
+    
+    _button2.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+        self.realItem.innerItem.title = @"dsfadsf";
+        return [RACSignal empty];
+    }];
+    
+    [self addObserver:self forKeyPath:@"realItem.innerItem.title" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+}
+
+- (void)dealloc
+{
+    [self removeObserver:self forKeyPath:@"realItem.innerItem.title"];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    NSLog(@"keypath = %@, object = %@, change = %@", keyPath, object, change);
 }
 
 - (void)didReceiveMemoryWarning {

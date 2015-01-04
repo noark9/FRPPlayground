@@ -17,6 +17,7 @@ typedef NS_OPTIONS(NSUInteger, LoginStatus) {
 
 @class RACSignal;
 @class RACCommand;
+@class DataTableViewModel;
 
 @interface LoginViewModel : RVMViewModel
 
@@ -27,5 +28,7 @@ typedef NS_OPTIONS(NSUInteger, LoginStatus) {
 @property (nonatomic, strong, readonly) RACSignal *loginButtonEnabledSignal;
 @property (nonatomic, strong, readonly) RACCommand *loginCommand;
 @property (nonatomic, strong, readonly) RACCommand *resetCommand;
+
+- (DataTableViewModel *)dataTableViewModel;
 
 @end

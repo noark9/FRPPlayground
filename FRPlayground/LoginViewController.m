@@ -33,6 +33,18 @@
     [self setupViewModel];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    _viewModel.active = YES;
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    _viewModel.active = NO;
+}
+
 #pragma mark - view model bind
 
 - (void)setupViewModel
@@ -55,8 +67,8 @@
         LoginStatus status = [x unsignedIntegerValue];
         switch (status) {
             case LoginStatusNone:
-            case LoginStatusFinished:
             case LoginStatusFailed:
+            case LoginStatusFinished:
                 self.loadingContainerView.hidden = YES;
                 [self.loadingActivityIndicatorView stopAnimating];
                 break;
