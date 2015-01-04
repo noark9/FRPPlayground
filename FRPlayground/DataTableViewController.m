@@ -50,9 +50,4 @@ static NSString *kCellIdentifier = @"DataTableViewCell";
     return cell;
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    
-}
-
 @end
