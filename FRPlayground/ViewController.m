@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "DataItemViewModel.h"
-#import <RXCollection.h>
 #import <ReactiveCocoa.h>
 
 @interface ViewController ()
@@ -115,21 +114,6 @@
 }
 
 - (IBAction)buttonPushed:(id)sender {
-    NSArray *array = [@[@(1), @(2), @(3), @(4)] rx_mapWithBlock:^id(id each) {
-        return @(pow([each integerValue], 2));
-    }];
-    RACSequence *stream = [array rac_sequence];
-    NSLog(@"stream %@", stream);
-    RACSequence *stream2 = [stream map:^id(id value) {
-        return @([value integerValue] * 9);
-    }];
-    
-    NSLog(@"stream after map %@", [stream2 array]);
-    
-    NSString *string = [stream2 foldLeftWithStart:@"left: " reduce:^id(id accumulator, id value) {
-        return [accumulator stringByAppendingString:[NSString stringWithFormat:@"%d", [value integerValue]]];
-    }];
-    NSLog(@"%@", string);
 }
 
 @end

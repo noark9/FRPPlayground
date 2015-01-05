@@ -5,7 +5,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'FRPlayground' do
 
-    pod 'RXCollections', '~> 1.0'
     pod 'ReactiveCocoa'
     pod 'ReactiveViewModel'
 end
